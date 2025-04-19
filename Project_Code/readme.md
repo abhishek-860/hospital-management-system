@@ -1,1 +1,1 @@
-# This is my hospital mangement project.
+# This is my hospital management project.
