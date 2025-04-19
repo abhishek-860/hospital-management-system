@@ -42,15 +42,15 @@ public class Patient {
                   PreparedStatement preparedStatement = connection.prepareStatement(query);
                   ResultSet resultSet = preparedStatement.executeQuery();
                   System.out.println("Patients: ");
-                  System.out.println("+------------+--------------+------+-----+---------+");
-                  System.out.println("| Patient Id | Name         | Age | Gender     |");
-                  System.out.println("+------------+--------------+------+-----+---------+");
+System.out.println("+------------+--------------+------+---------------+");
+System.out.println("| Patient Id | Name         | Age  | Gender        |");
+System.out.println("+------------+--------------+------+-----+---------+");
                   while (resultSet.next()) {
                         int id = resultSet.getInt("id");
                         String name = resultSet.getString("age");
                         String gender = resultSet.getString("gender");
                         System.out.printf("|%-12s|%-20s|%-10s|%-12s\n", id, name, gender);
-                        System.out.println("+------------+--------------+------+-----+---------+");
+System.out.println("+------------+--------------+------+-----+---------+");
                   }
             } catch (SQLException e){
                   e.printStackTrace();
